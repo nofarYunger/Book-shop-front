@@ -1,0 +1,33 @@
+.book-app {
+    background-color: $page-bg-clr;
+    box-shadow: 0px 2px 50px 10px rgba(0, 0, 0, 0.21);
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found {
+    height: 70vh;
+    text-align: center;
+    .not-found-img {
+        position: relative;
+        background-image: url("../../imgs/undraw_searching.svg");
+        width: 50vw;
+        height: 50vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 30px;
+        font-family: Roboto-bold;
+        line-height: 3rem;
+        color: $body-clr;
+        padding: 0px 20px;
+    }
+    h2 {
+        color: $body-clr-light;
+        padding: 0px 20px;
+        font-family: Roboto-italic;
+
+    }
+}

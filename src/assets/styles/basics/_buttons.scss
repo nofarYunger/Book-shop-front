@@ -1,0 +1,96 @@
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+::before,
+::after {
+    position: absolute;
+    content: "";
+}
+
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+.btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 9px;
+    transition: 0.3s;
+}
+
+.btn-2 {
+    &::before {
+        background-color: $body-clr;
+        transition: 0.3s ease-out;
+    }
+    span {
+        color: $body-clr;
+        border: 1px solid $body-clr;
+        transition: 0.2s;
+    }
+    &.hover-slide-right span:hover {
+        color:$accent-clr;
+    }
+
+    span:hover {
+        color:#fff;
+        transition: 0.2s 0.1s;
+    }
+
+    &.hover-slide-left::before {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 0%;
+    }
+    &.hover-slide-left:hover::before {
+        width: 100%;
+    }
+
+    &.hover-slide-right::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+    }
+    &.hover-slide-right:hover::before {
+        width: 100%;
+    }
+}
+
+
+.main-btn {
+    display: block;
+
+    padding: 10px 25px;
+    border: none;
+    background-color: $accent-clr;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: lighten($accent-clr, 10%);
+        transition: color 0.2sec;
+    }
+}

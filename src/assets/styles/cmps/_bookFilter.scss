@@ -1,0 +1,39 @@
+.book-filter {
+    padding: 0px 20px;
+    .search-bar {
+        margin-left: 50px;
+
+        position: relative;
+        .search-icon {
+            position: relative;
+            left: 40px;
+            background-image: url("../../imgs/icons8-search.svg");
+            width: 25px;
+            height: 100%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        input {
+            padding: 10px;
+            padding-left: 50px;
+            letter-spacing: 0.3px;
+            border: none;
+            margin: 10px 0px;
+            
+        &:focus{
+            border: 2px solid $base-bg;
+        }    
+        }
+    }
+    border-bottom: 2px solid $base-bg;
+    li {
+        margin-left: 1rem;
+        justify-self: flex-end;
+        transition: color 0.2s;
+        cursor: pointer;
+        &:hover {
+            color: $accent-clr;
+        }
+    }
+}

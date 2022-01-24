@@ -1,0 +1,24 @@
+.book-list {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding-top: 40px;
+    position: relative;
+    align-self: center;
+    padding: 40px 20px 0px;
+    @media (max-width: 725px) {
+        grid-template-columns: 1fr;
+    }
+
+    flex-grow: 1;
+    overflow-y: auto;
+}
+// .book-list:nth-child(even) {
+//     justify-self: right;
+//     background-color: aqua;
+// }
+// .book-list:nth-child(odd) {
+//     background-color: rgb(37, 97, 97);
+//     justify-self: flex-end;
+// }

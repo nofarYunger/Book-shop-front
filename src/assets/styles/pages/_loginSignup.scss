@@ -1,0 +1,126 @@
+.signup-form {
+    height: 100vh;
+    position: relative;
+    color: $body-clr-light;
+    .container {
+        position: relative;
+        background: $page-bg-clr;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 2px 50px 10px rgba(0, 0, 0, 0.21);
+    }
+    
+}
+.login-img {
+    position: relative;
+    background-image: url("../../imgs/reading-book.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: -webkit-fill-available;
+    align-self: flex-end;
+    margin-right: 10%;
+}
+
+.form {
+    margin-left: 12%;
+    position: relative;
+    align-self: center;
+    width: 50%;
+    z-index: 3;
+    background-color: white;
+    min-width: 400px;
+    border-radius: 4px;
+    padding: 20px 40px;
+    box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.3);
+
+    .title {
+        font-size: 50px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        color: $body-clr;
+        span {
+            font-family: Roboto-bold;
+        }
+    }
+    .input-container {
+        position: relative;
+        height: 45px;
+        width: 90%;
+        margin-bottom: 17px;
+    }
+    .input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #dadce0;
+        border-radius: 3px;
+        font-size: 16px;
+        padding: 0 20px;
+        outline: none;
+        background: none;
+        z-index: 1;
+    }
+
+    ::placeholder {
+        color: transparent;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
+    }
+    .label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 0 4px;
+        background-color: white;
+        color: #dadce0;
+        font-size: 16px;
+        transition: 0.5s;
+        z-index: 0;
+        user-select: none;
+    }
+
+    .input:focus + .label {
+        top: -7px;
+        left: 3px;
+        z-index: 10;
+        font-size: 14px;
+        font-weight: 600;
+        color: $accent-clr;
+    }
+    .input:focus {
+        border: 2px solid $accent-clr;
+    }
+
+    .input:not(:placeholder-shown) + .label {
+        top: -7px;
+        left: 3px;
+        z-index: 10;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .change-frm-btn {
+        font-size: 14px;
+        cursor: pointer;
+        &:hover {
+            color: $body-clr;
+        }
+    }
+    .form-msg {
+        font-family: Roboto;
+        color: darken($base-bg, 20%);
+        padding-bottom: 20px;
+    }
+
+    @media(max-width:1000px) {
+        
+    }
+}

@@ -1,0 +1,14 @@
+.cart-page {
+    background: $page-bg-clr;
+    min-height: 100vh;
+    justify-content: space-between;
+    .order-summery {
+        height: 100vh;
+        width: 30vw;
+        background-color: cadetblue;
+    }
+    .card-header{
+        width: 100%;
+        background-color: rgb(228, 18, 18);
+    }
+}

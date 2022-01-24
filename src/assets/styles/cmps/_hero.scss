@@ -1,0 +1,48 @@
+.hero-wrapper {
+    position: relative;
+    height: 70vh;
+    .content-container {
+        padding-top: 10%;
+        padding-left: 50px;
+        max-width: 40%;
+    }
+    h1 {
+        font-size: 70px;
+        color: $body-clr;
+        position: relative;
+        width: 400px;
+        z-index: 2;
+    }
+    p {
+        font-size: 20px;
+        line-height: 1.8rem;
+        color: $body-clr-light;
+    }
+    .hero-img {
+        background-image: url("../../imgs/Be-patient.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90%;
+        width: -webkit-fill-available;
+        align-self: flex-end;
+    }
+    @media (max-width: 1000px) {
+        height: 100vh;
+    }
+    @media (max-width: 800px) {
+        flex-direction: column;
+        .content-container {
+            padding-left: 10px;
+            max-width: 100%;
+            p{
+              font-size: 1.2rem;
+            }
+            h1{
+                font-size: 40px;
+            }
+        }
+    }
+
+
+}

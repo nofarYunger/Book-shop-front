@@ -1,0 +1,29 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.cart-book-list {
+    border: 1px solid blue;
+
+    th {
+        text-transform: uppercase;
+        color: $body-clr;
+        font-family: Roboto-bold;
+    }
+    td{
+        padding: 1em;
+    }
+}
+
+.prodact-details {
+    display: flex;
+    img {
+        width: 50%;
+    }
+    .cart-book-info {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

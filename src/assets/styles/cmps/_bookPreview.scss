@@ -1,0 +1,74 @@
+.book-card {
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 20px;
+    color: $body-clr-light;
+    font-size: 13px;
+    height: 296px;
+    max-width: 440px;
+    .thumbnail {
+        width: 160px;
+        margin-top: -35px;
+    }
+    .card-wrapper {
+        display: flex;
+        border-bottom: 1px solid #ebedef;
+        position: relative;
+        min-height: 240px;
+        .edit-icon {
+            position: absolute;
+            background-color: $border-color;
+            box-shadow: 0 -6px 0 0 $border-color, 0 6px 0 0 $border-color;
+            width: 4px;
+            height: 4px;
+            border: 0;
+            padding: 0;
+            right: 12px;
+            top: 17px;
+            margin-left: auto;
+        }
+    }
+    .card-content {
+        color: $body-clr;
+        padding: 30px;
+        overflow: hidden;
+        position: relative;
+        h1 {
+            font-family: Roboto-bold;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .book-sum {
+            color: $body-clr-light;
+            font-size: 13px;
+            line-height: 1.6em;
+            overflow: hidden;
+            display: -webkit-box;
+            margin-top: 15px;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        .author {
+            color: $body-clr-light;
+            font-family: Roboto-light-italic;
+            font-size: 13px;
+            margin-top: 4px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .btns-container {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        position: relative;
+        padding: 10px;
+    }
+}
